@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 40px;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    margin: 40px auto;
+    padding: 40px;
+    
+    background-color:white;
+    border-radius: 30px;
+    
+    width: 800px;
+}
+
+.images{
+    margin: 40px 0px ;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image1{
+    position: relative;
+    /* transform: rotateX(90deg); */
+
+    transform: rotate(90deg);
+
+
+    width: 200px;
+    height: 200px;
+
+}
+
+.image2{
+
+    transform: rotate(270deg) scaleX(-1);
+
+    width: 200px;
+    height: 200px;
+}
+
+.text{
+    margin: 40px 0px;
+
+    text-align: center;
+}
+
+.option{
+    margin: 40px 0px 0px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid rgb(10, 10, 10);
+
+    background-color: rgb(214, 223, 223);
+}
+
+.box:hover{
+    background-color: rgb(183, 175, 175);
+}
+
+.box img{
+    width: 120px;
+    height: 120px;
+}
+
+.box p {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.img1{
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-iteration-count: 3;
+}
+.img2{
+    animation-name: example1;
+    animation-duration: 1.5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes example{
+    from{
+        transform: rotate(75deg);
+    }
+    to{
+        transform: rotate(105deg);
+    }
+}
+@keyframes example1{
+    from{
+        transform: rotate(295deg) scaleX(-1);
+    }
+    to{
+        transform: rotate(255deg) scaleX(-1);
+    }
+}
