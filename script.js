@@ -15,7 +15,7 @@ rock.addEventListener('click',function show(){
     image2.classList.add("img2");
     image1.src="images/rock.png";
     image2.src="images/rock.png";
-    let target= Math.round(Math.random()*2);
+    let target= Math.floor(Math.random()*3);
     setTimeout((target)=> {
         image1.classList.remove("img1");
         image2.classList.remove("img2");
